@@ -886,7 +886,7 @@
     let newJobForm = document.getElementById("newJobForm");
     newJobForm.addEventListener("submit", (e) => {
         e.preventDefault();
-        const apiUrl = 'http://16.170.168.118:3000/api/Carrers';
+        const apiUrl = 'http://16.170.168.118:80/api/Carrers';
         const ResponsibilityContainer = document.getElementById('ResponsibilityContainer');
         const ResponsibilityFields = ResponsibilityContainer.querySelectorAll('input[type="text"]');
         const responsibilities = [];
@@ -932,7 +932,7 @@
     });
 </script>
 <script type="text/javascript">
-    const apiUrl = 'http://16.170.168.118:3000/api/Carrers';
+    const apiUrl = 'http://16.170.168.118:80/api/Carrers';
 
     fetch(apiUrl)
         .then(response => {
@@ -975,7 +975,7 @@
                                  <a class="dropdown-item" href="#">Edit</a>
                                  <a class="dropdown-item" href="#" onClick="(
                                  function(){
-                                    const deleteApiUrl = 'http://16.170.168.118:3000/api/Carrers/${job._id}';
+                                    const deleteApiUrl = 'http://16.170.168.118:80/api/Carrers/${job._id}';
                                     fetch(deleteApiUrl, {method: 'DELETE',})
                                         .then(response => {
                                             if (!response.ok) {

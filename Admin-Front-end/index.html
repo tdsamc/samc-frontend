@@ -1107,7 +1107,7 @@
 
 <script type="text/javascript">
     // .........................Carrers.........................................
-    const CarrersApiUrl = 'http://16.170.168.118:3000/api/Carrers';
+    const CarrersApiUrl = 'http://16.170.168.118:80/api/Carrers';
     fetch(CarrersApiUrl)
         .then(response => {
             if (!response.ok) {
@@ -1155,7 +1155,7 @@
                                                              <a class="dropdown-item" href="#">Edit</a>
                                                              <a class="dropdown-item" href="#" onClick="(
                                                              function(){
-                                                                const deleteApiUrl = 'http://16.170.168.118:3000/api/Carrers/${job._id}';
+                                                                const deleteApiUrl = 'http://16.170.168.118:80/api/Carrers/${job._id}';
                                                                 fetch(deleteApiUrl, {method: 'DELETE',})
                                                                     .then(response => {
                                                                         if (!response.ok) {
@@ -1192,7 +1192,7 @@
 
 
     // .........................News.........................................
-    const newsApiUrl = 'http://16.170.168.118:3000/api/News';
+    const newsApiUrl = 'http://16.170.168.118:80/api/News';
     fetch(newsApiUrl)
         .then(response => {
             if (!response.ok) {
@@ -1240,7 +1240,7 @@
                                                              <a class="dropdown-item" href="#">Edit</a>
                                                              <a class="dropdown-item" href="#" onClick="(
                                                              function(){
-                                                                const deleteApiUrl = 'http://16.170.168.118:3000/api/News/${news._id}';
+                                                                const deleteApiUrl = 'http://16.170.168.118:80/api/News/${news._id}';
                                                                 fetch(deleteApiUrl, {method: 'DELETE',})
                                                                     .then(response => {
                                                                         if (!response.ok) {
