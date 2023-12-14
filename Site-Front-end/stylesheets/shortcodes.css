@@ -744,8 +744,8 @@
     display: none;
 }
 
-.history li:after {
-    content: ",";
+.history li:last-child:after {
+    content: "";
     width: 15px;
     height: 15px;
     position: absolute;
