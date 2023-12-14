@@ -707,9 +707,6 @@ a.scheme:hover {
 	display: table;
 	z-index: 9999;
 }
-ul li li:before {
-    content: none;
-}
 
 .header-v2 .header {
 	background: none;
