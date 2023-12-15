@@ -744,7 +744,7 @@
     display: none;
 }
 
-.history li:after {
+.history li:last-child:after {
     content: "";
     width: 15px;
     height: 15px;
